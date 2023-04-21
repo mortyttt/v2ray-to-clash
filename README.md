@@ -15,5 +15,6 @@ https://dc9re2-5000.csb.app/sub/<base64 link>
 
 فقط کافیه لینک سابی که دارید رو تبدیل کنید به base64 ( بدون http:// ) و جایگداری کنید جای <base64 link> فعلا فقط vmess رو پشتیبانی میکنه.
 برای تبدیل به بیس64 هم میتونید از 
-@base64_encode_bot
+
+https://t.me/base64_encode_bot
 این ربات استفاده کنید
