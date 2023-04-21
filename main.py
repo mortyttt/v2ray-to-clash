@@ -1,4 +1,4 @@
-from flask import Flask, Response
+from flask import Flask, Response, request
 import base64
 import requests
 import json
@@ -18,7 +18,7 @@ def profile(url: str):
     name_num = 0
     url = base64.standard_b64decode(url).decode('utf-8')
     data = requests.get("http://"+url, timeout=30)
-    context = data.content
+    context = data.content.decode("utf-8")
     if context.find("://") == -1:
         context = base64.standard_b64decode(data.content).decode('utf-8')
     context = context.split("\n")
